@@ -1,0 +1,13 @@
+fun calcBugMoneyValue(dayNumber: Int, bugRank: Int, cashAmount: Int): Int {
+    val cash: Int = (dayNumber * bugRank + 42) * cashAmount
+    return(cash)
+}
+
+fun main() {
+    val dayNumber: Int = readln()?.toIntOrNull() ?: 0
+    val bugRank: Int = readln()?.toIntOrNull() ?: 0
+    val cashAmount : Int = readln()?.toIntOrNull() ?: 0
+
+    val cash = calcBugMoneyValue(dayNumber, bugRank, cashAmount)
+    println(cash)
+}
